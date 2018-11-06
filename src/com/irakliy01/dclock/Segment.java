@@ -48,10 +48,6 @@ class Segment {
         return this;
     }
 
-    double getSize() {
-        return size;
-    }
-
     Node getSegment() {
         return segment;
     }
