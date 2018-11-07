@@ -1,5 +1,3 @@
-package com.irakliy01.dclock;
-
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;

@@ -1,5 +1,3 @@
-package com.irakliy01.dclock;
-
 import javafx.scene.Node;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Polygon;
