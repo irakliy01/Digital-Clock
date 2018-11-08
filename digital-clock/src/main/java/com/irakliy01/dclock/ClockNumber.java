@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
 
 class ClockNumber {
 
-    private int numbers[] = new int[]{0x7E, 0x30, 0x6D, 0x79, 0x33, 0x5B, 0x5F, 0x70, 0x7F, 0x7B};
+    private byte numbers[] = new byte[] {0x7E, 0x30, 0x6D, 0x79, 0x33, 0x5B, 0x5F, 0x70, 0x7F, 0x7B};
     private Group number;
 
     ClockNumber(double size, double X, double Y) {
@@ -25,7 +25,7 @@ class ClockNumber {
     }
 
     void update(int time) {
-        int i = 6;
+        byte i = 6;
         for (Node node : number.getChildren()) {
             node.setVisible(((numbers[time] >> i--) & 1) == 1);
         }
