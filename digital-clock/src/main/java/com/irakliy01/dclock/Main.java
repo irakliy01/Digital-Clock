@@ -23,7 +23,7 @@ public class Main extends Application {
         root.getChildren().add(clock.getClock());
         clock.work();
 
-        primaryStage.setTitle("Digital com.irakliy01.dclock.Clock");
+        primaryStage.setTitle("Digital Clock");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();

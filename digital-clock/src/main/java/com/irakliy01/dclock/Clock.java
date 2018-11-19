@@ -13,6 +13,9 @@ class Clock {
     private boolean work = false;
     private Group dots;
 
+    private final Color DARK_RED = Color.valueOf("0x0f0000ff");
+
+
     Clock(double size, double width, double Y) {
         dots = new Group();
         clock = new ClockNumber[]{
@@ -47,6 +50,7 @@ class Clock {
     void work() {
         work = true;
         new Thread(() -> {
+            boolean show = true;
             while (work) {
                 try {
                     LocalDateTime now = LocalDateTime.now();
@@ -57,8 +61,12 @@ class Clock {
                     clock[3].update(now.getMinute() % 10);
 
                     for (Node circle : dots.getChildren()) {
-                        circle.setVisible(!circle.isVisible());
+                        if (show)
+                            ((Circle) circle).setFill(Color.RED);
+                        else
+                            ((Circle) circle).setFill(DARK_RED);
                     }
+                    show = !show;
                     Thread.sleep(1000);
                 } catch (Exception e) {
                     e.printStackTrace();

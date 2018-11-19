@@ -46,7 +46,6 @@ version = '1.0'
 jar {
     manifest {
         attributes("Implementation-Title": project.name,
-                "Implementation-Version": version,
                 "Main-Class": mainClassName)
     }
 }
