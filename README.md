@@ -1,6 +1,6 @@
 # Digital-Clock
 
-This application simulates a [seven-segment](https://en.wikipedia.org/wiki/Seven-segment_display) [digital clock](https://en.wikipedia.org/wiki/Digital_clock).
+This application shows a [seven-segment](https://en.wikipedia.org/wiki/Seven-segment_display) [digital clock](https://en.wikipedia.org/wiki/Digital_clock).
 
 Built with **Gradle 4.8**
 
